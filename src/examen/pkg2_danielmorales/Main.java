@@ -5,6 +5,9 @@
  */
 package examen.pkg2_danielmorales;
 
+import java.awt.Color;
+import javax.swing.JColorChooser;
+
 /**
  *
  * @author danie
@@ -27,21 +30,323 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jd_crearComputadora = new javax.swing.JDialog();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        tf_noSerie = new javax.swing.JFormattedTextField();
+        tf_year = new javax.swing.JSpinner();
+        btn_Color = new javax.swing.JButton();
+        tf_materialCompu = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        tf_tamañoRAMnuevaCompu = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        tf_marcaRAMnuevaCompu = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        tf_tamañoDiscoDuronuevaCompu = new javax.swing.JTextField();
+        jLabel14 = new javax.swing.JLabel();
+        tf_marcaDiscoDuronuevaCompu = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        tf_horasBateriasNuevaCompu = new javax.swing.JSpinner();
+        jLabel16 = new javax.swing.JLabel();
+        tf_materialBateriaNuevaCompu = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
+        tf_tecladoMaterialNuevaCompu = new javax.swing.JTextField();
+        jLabel18 = new javax.swing.JLabel();
+        btn_colorTecladoNuevaCompu = new javax.swing.JButton();
+        jLabel19 = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jLabel20 = new javax.swing.JLabel();
+        tf_tipoPantallaNuevaCompu = new javax.swing.JTextField();
+        jLabel21 = new javax.swing.JLabel();
+        tf_noNucleosProcesadorNuevaCompu = new javax.swing.JSpinner();
+        jLabel22 = new javax.swing.JLabel();
+        tf_velocidadProcesadorNuevaCompu = new javax.swing.JFormattedTextField();
+        bg_tactilPantallaNuevaCompu = new javax.swing.ButtonGroup();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+
+        jd_crearComputadora.setMinimumSize(new java.awt.Dimension(500, 500));
+
+        jLabel1.setText("No. de Serie");
+
+        jLabel2.setText("Año");
+
+        jLabel3.setText("Color");
+
+        jLabel4.setText("Material");
+
+        jLabel5.setText("RAM:");
+
+        jLabel6.setText("Disco Duro:");
+
+        jLabel7.setText("Bateria:");
+
+        jLabel8.setText("Teclado:");
+
+        jLabel9.setText("Pantalla:");
+
+        jLabel10.setText("Procesador:");
+
+        tf_noSerie.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        tf_year.setValue(2000);
+
+        btn_Color.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_ColorActionPerformed(evt);
+            }
+        });
+
+        jLabel11.setText("Tamaño:");
+
+        jLabel12.setText("Marca:");
+
+        jLabel13.setText("Tamaño:");
+
+        jLabel14.setText("Marca:");
+
+        jLabel15.setText("Horas:");
+
+        jLabel16.setText("Material:");
+
+        jLabel17.setText("Material:");
+
+        jLabel18.setText("Color:");
+
+        btn_colorTecladoNuevaCompu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_colorTecladoNuevaCompuMouseClicked(evt);
+            }
+        });
+
+        jLabel19.setText("Tactil:");
+
+        bg_tactilPantallaNuevaCompu.add(jRadioButton1);
+        jRadioButton1.setText("Si");
+
+        bg_tactilPantallaNuevaCompu.add(jRadioButton2);
+        jRadioButton2.setText("No");
+
+        jLabel20.setText("Tipo:");
+
+        jLabel21.setText("No. de nucleos:");
+
+        jLabel22.setText("Velocidad:");
+
+        tf_velocidadProcesadorNuevaCompu.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0.00"))));
+
+        javax.swing.GroupLayout jd_crearComputadoraLayout = new javax.swing.GroupLayout(jd_crearComputadora.getContentPane());
+        jd_crearComputadora.getContentPane().setLayout(jd_crearComputadoraLayout);
+        jd_crearComputadoraLayout.setHorizontalGroup(
+            jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_crearComputadoraLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel9)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(tf_noSerie)
+                            .addComponent(tf_year)
+                            .addComponent(btn_Color, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE))
+                        .addComponent(tf_materialCompu, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jd_crearComputadoraLayout.createSequentialGroup()
+                            .addComponent(jLabel11)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(tf_tamañoRAMnuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel12)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(tf_marcaRAMnuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jd_crearComputadoraLayout.createSequentialGroup()
+                            .addComponent(jLabel13)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(tf_tamañoDiscoDuronuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel14)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(tf_marcaDiscoDuronuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jd_crearComputadoraLayout.createSequentialGroup()
+                            .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(jd_crearComputadoraLayout.createSequentialGroup()
+                                    .addComponent(jLabel17)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(tf_tecladoMaterialNuevaCompu))
+                                .addGroup(jd_crearComputadoraLayout.createSequentialGroup()
+                                    .addComponent(jLabel15)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(tf_horasBateriasNuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jLabel16)))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(tf_materialBateriaNuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jd_crearComputadoraLayout.createSequentialGroup()
+                                    .addComponent(jLabel18)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(btn_colorTecladoNuevaCompu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGroup(jd_crearComputadoraLayout.createSequentialGroup()
+                            .addComponent(jLabel19)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jRadioButton1)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jRadioButton2)
+                            .addGap(18, 18, 18)
+                            .addComponent(jLabel20)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(tf_tipoPantallaNuevaCompu)))
+                    .addGroup(jd_crearComputadoraLayout.createSequentialGroup()
+                        .addComponent(jLabel21)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(tf_noNucleosProcesadorNuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel22)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(tf_velocidadProcesadorNuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(164, Short.MAX_VALUE))
+        );
+        jd_crearComputadoraLayout.setVerticalGroup(
+            jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_crearComputadoraLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jd_crearComputadoraLayout.createSequentialGroup()
+                        .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1)
+                            .addComponent(tf_noSerie, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(tf_year, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel3))
+                    .addComponent(btn_Color, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(tf_materialCompu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel11)
+                    .addComponent(tf_tamañoRAMnuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel12)
+                    .addComponent(tf_marcaRAMnuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel13)
+                        .addComponent(tf_tamañoDiscoDuronuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel14)
+                        .addComponent(tf_marcaDiscoDuronuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel15)
+                    .addComponent(tf_horasBateriasNuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel16)
+                    .addComponent(tf_materialBateriaNuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel17)
+                    .addComponent(tf_tecladoMaterialNuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel18)
+                    .addComponent(btn_colorTecladoNuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(jLabel19)
+                    .addComponent(jRadioButton1)
+                    .addComponent(jRadioButton2)
+                    .addComponent(jLabel20)
+                    .addComponent(tf_tipoPantallaNuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel21)
+                    .addComponent(tf_noNucleosProcesadorNuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel22)
+                    .addComponent(tf_velocidadProcesadorNuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(130, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(500, 500));
+
+        jMenu1.setText("Computadoras");
+
+        jMenuItem1.setText("Crear computadora");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem1);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Edit");
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 500, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 479, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+        jd_crearComputadora.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void btn_ColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ColorActionPerformed
+        // TODO add your handling code here:
+        JColorChooser jc = new JColorChooser();
+        Color color = jc.showDialog(jd_crearComputadora, "Ingrese el color", Color.yellow);
+        btn_Color.setBackground(color);
+    }//GEN-LAST:event_btn_ColorActionPerformed
+
+    private void btn_colorTecladoNuevaCompuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_colorTecladoNuevaCompuMouseClicked
+        // TODO add your handling code here:
+        JColorChooser jc = new JColorChooser();
+        Color color = jc.showDialog(jd_crearComputadora, "Ingrese el color", Color.yellow);
+        btn_colorTecladoNuevaCompu.setBackground(color);
+    }//GEN-LAST:event_btn_colorTecladoNuevaCompuMouseClicked
 
     /**
      * @param args the command line arguments
@@ -79,5 +384,50 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup bg_tactilPantallaNuevaCompu;
+    private javax.swing.JButton btn_Color;
+    private javax.swing.JButton btn_colorTecladoNuevaCompu;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JDialog jd_crearComputadora;
+    private javax.swing.JSpinner tf_horasBateriasNuevaCompu;
+    private javax.swing.JTextField tf_marcaDiscoDuronuevaCompu;
+    private javax.swing.JTextField tf_marcaRAMnuevaCompu;
+    private javax.swing.JTextField tf_materialBateriaNuevaCompu;
+    private javax.swing.JTextField tf_materialCompu;
+    private javax.swing.JSpinner tf_noNucleosProcesadorNuevaCompu;
+    private javax.swing.JFormattedTextField tf_noSerie;
+    private javax.swing.JTextField tf_tamañoDiscoDuronuevaCompu;
+    private javax.swing.JTextField tf_tamañoRAMnuevaCompu;
+    private javax.swing.JTextField tf_tecladoMaterialNuevaCompu;
+    private javax.swing.JTextField tf_tipoPantallaNuevaCompu;
+    private javax.swing.JFormattedTextField tf_velocidadProcesadorNuevaCompu;
+    private javax.swing.JSpinner tf_year;
     // End of variables declaration//GEN-END:variables
 }
