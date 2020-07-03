@@ -6,15 +6,16 @@
 package examen.pkg2_danielmorales;
 
 import java.awt.Color;
+import java.io.Serializable;
 
 /**
  *
  * @author danie
  */
-public class Computadora {
+public class Computadora implements Serializable{
     private int numSerie;
     private String año;
-    private Color color;
+    private String color;
     private String material;
     private RAM ram;
     private DiscoDuro discoDuro;
@@ -23,7 +24,7 @@ public class Computadora {
     private Pantalla pantalla;
     private Procesador procesador;
 
-    public Computadora(int numSerie, String año, Color color, String material, RAM ram, DiscoDuro discoDuro, Bateria bateria, Teclado teclado, Pantalla pantalla, Procesador procesador) {
+    public Computadora(int numSerie, String año, String color, String material, RAM ram, DiscoDuro discoDuro, Bateria bateria, Teclado teclado, Pantalla pantalla, Procesador procesador) {
         this.numSerie = numSerie;
         this.año = año;
         this.color = color;
@@ -55,11 +56,11 @@ public class Computadora {
         this.año = año;
     }
 
-    public Color getColor() {
+    public String getColor() {
         return color;
     }
 
-    public void setColor(Color color) {
+    public void setColor(String color) {
         this.color = color;
     }
 

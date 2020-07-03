@@ -15,11 +15,10 @@ public class Tecnico {
     private String genero;
     private int cantComputadoras;
 
-    public Tecnico(String nombre, int edad, String genero, int cantComputadoras) {
+    public Tecnico(String nombre, int edad, String genero) {
         this.nombre = nombre;
         this.edad = edad;
         this.genero = genero;
-        this.cantComputadoras = cantComputadoras;
     }
 
     public Tecnico() {

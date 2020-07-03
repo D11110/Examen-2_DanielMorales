@@ -9,12 +9,12 @@ package examen.pkg2_danielmorales;
  *
  * @author danie
  */
-public class RAM extends Parte{
+public class RAM extends Parte {
     
    private String tamaño;
    private String marca;
 
-    public RAM(String tamaño, String marca, String tiempo) {
+    public RAM(String tamaño, String marca, int tiempo) {
         super(tiempo);
         this.tamaño = tamaño;
         this.marca = marca;

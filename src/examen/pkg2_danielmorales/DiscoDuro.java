@@ -9,12 +9,12 @@ package examen.pkg2_danielmorales;
  *
  * @author danie
  */
-public class DiscoDuro extends Parte {
+public class DiscoDuro extends Parte  {
 
     private String tamaño;
     private String marca;
 
-    public DiscoDuro(String tamaño, String marca, String tiempo) {
+    public DiscoDuro(String tamaño, String marca, int tiempo) {
         super(tiempo);
         this.tamaño = tamaño;
         this.marca = marca;

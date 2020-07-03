@@ -9,11 +9,11 @@ package examen.pkg2_danielmorales;
  *
  * @author danie
  */
-public class Pantalla extends Parte{
+public class Pantalla extends Parte {
     private boolean tactil;
     private String tipo;
 
-    public Pantalla(boolean tactil, String tipo, String tiempo) {
+    public Pantalla(boolean tactil, String tipo, int tiempo) {
         super(tiempo);
         this.tactil = tactil;
         this.tipo = tipo;

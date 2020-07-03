@@ -9,11 +9,11 @@ package examen.pkg2_danielmorales;
  *
  * @author danie
  */
-public class Procesador extends Parte{
+public class Procesador extends Parte {
     private int numNucleos;
     private Double velocidad;
 
-    public Procesador(int numNucleos, Double velocidad, String tiempo) {
+    public Procesador(int numNucleos, Double velocidad, int tiempo) {
         super(tiempo);
         this.numNucleos = numNucleos;
         this.velocidad = velocidad;

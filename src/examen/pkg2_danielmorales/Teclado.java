@@ -11,11 +11,11 @@ import java.awt.Color;
  *
  * @author danie
  */
-public class Teclado extends Parte{
+public class Teclado extends Parte {
     private String material;
-    private Color color;
+    private String color;
 
-    public Teclado(String material, Color color, String tiempo) {
+    public Teclado(String material, String color, int tiempo) {
         super(tiempo);
         this.material = material;
         this.color = color;
@@ -34,11 +34,11 @@ public class Teclado extends Parte{
         this.material = material;
     }
 
-    public Color getColor() {
+    public String getColor() {
         return color;
     }
 
-    public void setColor(Color color) {
+    public void setColor(String color) {
         this.color = color;
     }
 

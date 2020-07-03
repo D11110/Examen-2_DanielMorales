@@ -1,9 +1,11 @@
 package examen.pkg2_danielmorales;
 
-public class Parte {
-    private String tiempo;
+import java.io.Serializable;
 
-    public Parte(String tiempo) {
+public class Parte implements Serializable{
+    private int tiempo;
+
+    public Parte(int tiempo) {
         this.tiempo = tiempo;
     }
 
@@ -12,11 +14,11 @@ public class Parte {
     
     
 
-    public String getTiempo() {
+    public int getTiempo() {
         return tiempo;
     }
 
-    public void setTiempo(String tiempo) {
+    public void setTiempo(int tiempo) {
         this.tiempo = tiempo;
     }
 

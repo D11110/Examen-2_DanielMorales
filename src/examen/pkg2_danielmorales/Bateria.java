@@ -9,11 +9,11 @@ package examen.pkg2_danielmorales;
  *
  * @author danie
  */
-public class Bateria extends Parte{
+public class Bateria extends Parte {
     private int capacidad;
     private String material;
 
-    public Bateria(int capacidad, String material, String tiempo) {
+    public Bateria(int capacidad, String material, int tiempo) {
         super(tiempo);
         this.capacidad = capacidad;
         this.material = material;
