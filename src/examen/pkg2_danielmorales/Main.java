@@ -877,6 +877,7 @@ public class Main extends javax.swing.JFrame {
         );
 
         jd_eliminarComputadora.setMinimumSize(new java.awt.Dimension(500, 320));
+        jd_eliminarComputadora.setPreferredSize(new java.awt.Dimension(500, 320));
 
         tablaEliminar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1584,6 +1585,8 @@ public class Main extends javax.swing.JFrame {
 
         computadoras.getListaComputadoras().remove(indComp);
         computadoras.escribirArchivo();
+        
+        JOptionPane.showMessageDialog(jd_eliminarComputadora, "Eliminado");
 
     }//GEN-LAST:event_jButton7MouseClicked
 
@@ -1627,7 +1630,6 @@ public class Main extends javax.swing.JFrame {
             e.printStackTrace();
         }
 
-        JOptionPane.showConfirmDialog(jd_eliminarComputadora, "Eliminado");
 
     }//GEN-LAST:event_tablaEliminarMouseClicked
 
