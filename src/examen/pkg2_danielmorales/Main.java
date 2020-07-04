@@ -154,14 +154,40 @@ public class Main extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         tf_colorMod = new javax.swing.JTextField();
         tf_colorTecladoMod = new javax.swing.JTextField();
+        jd_eliminarComputadora = new javax.swing.JDialog();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tablaEliminar = new javax.swing.JTable();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jd_modTecnico = new javax.swing.JDialog();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        tablaModificarTecnico = new javax.swing.JTable();
+        jLabel60 = new javax.swing.JLabel();
+        tf_nombreTecnicoMod = new javax.swing.JTextField();
+        tf_edadTecnicoMod = new javax.swing.JSpinner();
+        rb_generoMTecnicoMod = new javax.swing.JRadioButton();
+        rb_generoFTecnicoMod = new javax.swing.JRadioButton();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jd_eliminarTecnico = new javax.swing.JDialog();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        tablaEliminarTecnico = new javax.swing.JTable();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
 
-        jd_crearComputadora.setMinimumSize(new java.awt.Dimension(500, 500));
+        jd_crearComputadora.setMinimumSize(new java.awt.Dimension(541, 520));
+        jd_crearComputadora.setPreferredSize(new java.awt.Dimension(541, 520));
 
         jLabel1.setText("No. de Serie");
 
@@ -488,28 +514,26 @@ public class Main extends javax.swing.JFrame {
         jd_crearTecnicosLayout.setHorizontalGroup(
             jd_crearTecnicosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jd_crearTecnicosLayout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addGroup(jd_crearTecnicosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel31)
+                    .addComponent(jLabel30)
+                    .addComponent(jLabel29))
+                .addGap(18, 18, 18)
                 .addGroup(jd_crearTecnicosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tf_nombreTecnico, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jd_crearTecnicosLayout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addGroup(jd_crearTecnicosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel31)
-                            .addComponent(jLabel30)
-                            .addComponent(jLabel29))
-                        .addGap(18, 18, 18)
-                        .addGroup(jd_crearTecnicosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tf_nombreTecnico, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_edadTecnico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jd_crearTecnicosLayout.createSequentialGroup()
-                                .addComponent(rb_generoMTecnico)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rb_generoFTecnico)))
-                        .addGap(0, 140, Short.MAX_VALUE))
-                    .addGroup(jd_crearTecnicosLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton4)))
-                .addContainerGap())
+                        .addComponent(rb_generoMTecnico)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(rb_generoFTecnico))
+                    .addComponent(tf_edadTecnico, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(150, Short.MAX_VALUE))
+            .addGroup(jd_crearTecnicosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton4)
+                .addGap(47, 47, 47))
         );
         jd_crearTecnicosLayout.setVerticalGroup(
             jd_crearTecnicosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -527,14 +551,15 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jLabel31)
                     .addComponent(rb_generoMTecnico)
                     .addComponent(rb_generoFTecnico))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 156, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 114, Short.MAX_VALUE)
                 .addGroup(jd_crearTecnicosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton3)
                     .addComponent(jButton4))
-                .addContainerGap())
+                .addGap(53, 53, 53))
         );
 
-        jd_modificarComputadoras.setMinimumSize(new java.awt.Dimension(500, 668));
+        jd_modificarComputadoras.setMinimumSize(new java.awt.Dimension(520, 688));
+        jd_modificarComputadoras.setPreferredSize(new java.awt.Dimension(520, 688));
 
         jLabel32.setText("Color:");
 
@@ -839,6 +864,212 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jd_eliminarComputadora.setMinimumSize(new java.awt.Dimension(500, 320));
+        jd_eliminarComputadora.setPreferredSize(new java.awt.Dimension(500, 320));
+
+        tablaEliminar.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "No. de serie", "Año", "Material", "Ram", "Disco duro"
+            }
+        ));
+        tablaEliminar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tablaEliminarMouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(tablaEliminar);
+
+        jButton7.setText("Eliminar");
+        jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton7MouseClicked(evt);
+            }
+        });
+
+        jButton8.setText("Regresar");
+        jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton8MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jd_eliminarComputadoraLayout = new javax.swing.GroupLayout(jd_eliminarComputadora.getContentPane());
+        jd_eliminarComputadora.getContentPane().setLayout(jd_eliminarComputadoraLayout);
+        jd_eliminarComputadoraLayout.setHorizontalGroup(
+            jd_eliminarComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_eliminarComputadoraLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jd_eliminarComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jd_eliminarComputadoraLayout.createSequentialGroup()
+                        .addComponent(jButton8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton7)))
+                .addContainerGap(38, Short.MAX_VALUE))
+        );
+        jd_eliminarComputadoraLayout.setVerticalGroup(
+            jd_eliminarComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_eliminarComputadoraLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jd_eliminarComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton7)
+                    .addComponent(jButton8))
+                .addContainerGap(35, Short.MAX_VALUE))
+        );
+
+        jd_modTecnico.setMinimumSize(new java.awt.Dimension(522, 396));
+
+        tablaModificarTecnico.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Edad", "Genero"
+            }
+        ));
+        tablaModificarTecnico.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tablaModificarTecnicoMouseClicked(evt);
+            }
+        });
+        jScrollPane3.setViewportView(tablaModificarTecnico);
+
+        jLabel60.setText("Genero");
+
+        bg_generosTecnico.add(rb_generoMTecnicoMod);
+        rb_generoMTecnicoMod.setText("M");
+
+        bg_generosTecnico.add(rb_generoFTecnicoMod);
+        rb_generoFTecnicoMod.setText("F");
+
+        jLabel61.setText("Nombre");
+
+        jLabel62.setText("Edad");
+
+        jButton9.setText("Regresar");
+        jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton9MouseClicked(evt);
+            }
+        });
+
+        jButton10.setText("Modificar");
+        jButton10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton10MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jd_modTecnicoLayout = new javax.swing.GroupLayout(jd_modTecnico.getContentPane());
+        jd_modTecnico.getContentPane().setLayout(jd_modTecnicoLayout);
+        jd_modTecnicoLayout.setHorizontalGroup(
+            jd_modTecnicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_modTecnicoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jd_modTecnicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_modTecnicoLayout.createSequentialGroup()
+                        .addGroup(jd_modTecnicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel60)
+                            .addComponent(jLabel62)
+                            .addComponent(jLabel61))
+                        .addGap(18, 18, 18)
+                        .addGroup(jd_modTecnicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tf_nombreTecnicoMod, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jd_modTecnicoLayout.createSequentialGroup()
+                                .addComponent(rb_generoMTecnicoMod)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rb_generoFTecnicoMod))
+                            .addComponent(tf_edadTecnicoMod, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jd_modTecnicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(jd_modTecnicoLayout.createSequentialGroup()
+                            .addComponent(jButton9)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton10))
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 452, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(60, Short.MAX_VALUE))
+        );
+        jd_modTecnicoLayout.setVerticalGroup(
+            jd_modTecnicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_modTecnicoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jd_modTecnicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel61)
+                    .addComponent(tf_nombreTecnicoMod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_modTecnicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel62)
+                    .addComponent(tf_edadTecnicoMod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_modTecnicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel60)
+                    .addComponent(rb_generoMTecnicoMod)
+                    .addComponent(rb_generoFTecnicoMod))
+                .addGap(18, 18, 18)
+                .addGroup(jd_modTecnicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton9)
+                    .addComponent(jButton10))
+                .addContainerGap(40, Short.MAX_VALUE))
+        );
+
+        jd_eliminarTecnico.setMinimumSize(new java.awt.Dimension(511, 297));
+
+        tablaEliminarTecnico.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Edad", "Genero"
+            }
+        ));
+        tablaEliminarTecnico.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tablaEliminarTecnicoMouseClicked(evt);
+            }
+        });
+        jScrollPane4.setViewportView(tablaEliminarTecnico);
+
+        jButton11.setText("Regresar");
+        jButton11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton11MouseClicked(evt);
+            }
+        });
+
+        jButton12.setText("Eliminar");
+
+        javax.swing.GroupLayout jd_eliminarTecnicoLayout = new javax.swing.GroupLayout(jd_eliminarTecnico.getContentPane());
+        jd_eliminarTecnico.getContentPane().setLayout(jd_eliminarTecnicoLayout);
+        jd_eliminarTecnicoLayout.setHorizontalGroup(
+            jd_eliminarTecnicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_eliminarTecnicoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jd_eliminarTecnicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jd_eliminarTecnicoLayout.createSequentialGroup()
+                        .addComponent(jButton11)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton12)))
+                .addContainerGap(49, Short.MAX_VALUE))
+        );
+        jd_eliminarTecnicoLayout.setVerticalGroup(
+            jd_eliminarTecnicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_eliminarTecnicoLayout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jd_eliminarTecnicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton11)
+                    .addComponent(jButton12))
+                .addContainerGap(43, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jMenu1.setText("Computadoras");
@@ -859,6 +1090,14 @@ public class Main extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem3);
 
+        jMenuItem4.setText("Eliminar computadora");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem4);
+
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Tecnicos");
@@ -870,6 +1109,22 @@ public class Main extends javax.swing.JFrame {
             }
         });
         jMenu2.add(jMenuItem2);
+
+        jMenuItem5.setText("Modificar tecnico");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem5);
+
+        jMenuItem6.setText("Eliminar tecnico");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem6);
 
         jMenuBar1.add(jMenu2);
 
@@ -975,6 +1230,7 @@ public class Main extends javax.swing.JFrame {
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
         // TODO add your handling code here:
         try {
+            tecnicos.cargarArchivo();
             String nombre = tf_nombreTecnico.getText();
             int edad = Integer.parseInt(tf_edadTecnico.getValue().toString());
             String genero = "";
@@ -1110,15 +1366,14 @@ public class Main extends javax.swing.JFrame {
             Procesador proce = new Procesador(numNucleosProcesador, velocidadProcesador, tiempoProcesador);
 
             Computadora compu = new Computadora(noSerie, año, colorCompu, materialCompu, r, hdd, bat, teclado, pant, proce);
-            
+
             computadoras.getListaComputadoras().add(compu);
             computadoras.escribirArchivo();
-            
-            JOptionPane.showMessageDialog(jd_modificarComputadoras, "Modificado exitosamente");
+
         } catch (Exception e) {
             e.printStackTrace();
         }
-        
+
         tablaModificar.setModel(new javax.swing.table.DefaultTableModel(
                 new Object[][]{},
                 new String[]{
@@ -1146,8 +1401,291 @@ public class Main extends javax.swing.JFrame {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        JOptionPane.showConfirmDialog(jd_modificarComputadoras, "Se modifico exitosamente");
 
     }//GEN-LAST:event_jButton5MouseClicked
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        // TODO add your handling code here:
+
+        tablaEliminar.setModel(new javax.swing.table.DefaultTableModel(
+                new Object[][]{},
+                new String[]{
+                    "No. de serie", "Año", "Material", "Ram", "Disco duro"
+                }
+        ));
+
+        try {
+            computadoras.cargarArchivo();
+
+            DefaultTableModel model = (DefaultTableModel) tablaEliminar.getModel();
+
+            for (int i = 0; i < computadoras.getListaComputadoras().size(); i++) {
+                Object[] newRow = {
+                    computadoras.getListaComputadoras().get(i).getNumSerie(),
+                    computadoras.getListaComputadoras().get(i).getAño(),
+                    computadoras.getListaComputadoras().get(i).getMaterial(),
+                    computadoras.getListaComputadoras().get(i).getRam(),
+                    computadoras.getListaComputadoras().get(i).getDiscoDuro()
+                };
+                model.addRow(newRow);
+            }
+
+            tablaEliminar.setModel(model);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        jd_eliminarComputadora.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
+        // TODO add your handling code here:
+        jd_eliminarComputadora.setVisible(false);
+        this.setVisible(true);
+    }//GEN-LAST:event_jButton8MouseClicked
+
+    private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
+        // TODO add your handling code here:
+
+        computadoras.getListaComputadoras().remove(indComp);
+        computadoras.escribirArchivo();
+
+    }//GEN-LAST:event_jButton7MouseClicked
+
+
+    private void tablaEliminarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tablaEliminarMouseClicked
+        // TODO add your handling code here:
+
+        int sele = tablaEliminar.getSelectedRow();
+        indComp = 0;
+        for (int i = 0; i < computadoras.getListaComputadoras().size(); i++) {
+            if (computadoras.getListaComputadoras().get(i).getNumSerie() == Integer.parseInt(tablaEliminar.getValueAt(sele, 0).toString())) {
+                indComp = i;
+            }
+        }
+
+        tablaEliminar.setModel(new javax.swing.table.DefaultTableModel(
+                new Object[][]{},
+                new String[]{
+                    "No. de serie", "Año", "Material", "Ram", "Disco duro"
+                }
+        ));
+
+        try {
+            computadoras.cargarArchivo();
+
+            DefaultTableModel model = (DefaultTableModel) tablaEliminar.getModel();
+
+            for (int i = 0; i < computadoras.getListaComputadoras().size(); i++) {
+                Object[] newRow = {
+                    computadoras.getListaComputadoras().get(i).getNumSerie(),
+                    computadoras.getListaComputadoras().get(i).getAño(),
+                    computadoras.getListaComputadoras().get(i).getMaterial(),
+                    computadoras.getListaComputadoras().get(i).getRam(),
+                    computadoras.getListaComputadoras().get(i).getDiscoDuro()
+                };
+                model.addRow(newRow);
+            }
+
+            tablaEliminar.setModel(model);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        JOptionPane.showConfirmDialog(jd_eliminarComputadora, "Eliminado");
+
+    }//GEN-LAST:event_tablaEliminarMouseClicked
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        // TODO add your handling code here:
+        tablaModificarTecnico.setModel(new javax.swing.table.DefaultTableModel(
+                new Object[][]{},
+                new String[]{
+                    "Nombre", "Edad", "Genero"
+                }
+        ));
+
+        try {
+            tecnicos.cargarArchivo();
+
+            DefaultTableModel model = (DefaultTableModel) tablaModificarTecnico.getModel();
+
+            for (int i = 0; i < tecnicos.getListaTecnicos().size(); i++) {
+                Object[] newRow = {
+                    tecnicos.getListaTecnicos().get(i).getNombre(),
+                    tecnicos.getListaTecnicos().get(i).getEdad(),
+                    tecnicos.getListaTecnicos().get(i).getGenero()
+                };
+                model.addRow(newRow);
+            }
+
+            tablaModificarTecnico.setModel(model);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        jd_modTecnico.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    static int indTecSel = 0;
+
+    private void tablaModificarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tablaModificarTecnicoMouseClicked
+        // TODO add your handling code here:
+        int sel = tablaModificarTecnico.getSelectedRow();
+        indTecSel = 0;
+        for (int i = 0; i < tecnicos.getListaTecnicos().size(); i++) {
+            if (tecnicos.getListaTecnicos().get(i).getNombre().equalsIgnoreCase(String.valueOf(tablaModificarTecnico.getValueAt(sel, 0)))) {
+                indTecSel = i;
+            }
+        }
+
+        tf_nombreTecnicoMod.setText(tecnicos.getListaTecnicos().get(indTecSel).getNombre());
+
+
+    }//GEN-LAST:event_tablaModificarTecnicoMouseClicked
+
+    private void jButton10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton10MouseClicked
+        // TODO add your handling code here:
+        try {
+            tecnicos.getListaTecnicos().remove(indTecSel);
+            tecnicos.escribirArchivo();
+
+            String nombre = tf_nombreTecnicoMod.getText();
+            int edad = Integer.parseInt(tf_edadTecnicoMod.getValue().toString());
+            String genero = "";
+            if (rb_generoMTecnicoMod.isSelected()) {
+                genero = "Masculino";
+
+            } else if (rb_generoFTecnicoMod.isSelected()) {
+                genero = "Femenino";
+            }
+
+            Tecnico t = new Tecnico(nombre, edad, genero);
+            tecnicos.getListaTecnicos().add(t);
+            tecnicos.escribirArchivo();
+            JOptionPane.showMessageDialog(jd_modTecnico, "Modificado exitosamente");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        tablaModificarTecnico.setModel(new javax.swing.table.DefaultTableModel(
+                new Object[][]{},
+                new String[]{
+                    "Nombre", "Edad", "Genero"
+                }
+        ));
+
+        try {
+            tecnicos.cargarArchivo();
+
+            DefaultTableModel model = (DefaultTableModel) tablaModificarTecnico.getModel();
+
+            for (int i = 0; i < tecnicos.getListaTecnicos().size(); i++) {
+                Object[] newRow = {
+                    tecnicos.getListaTecnicos().get(i).getNombre(),
+                    tecnicos.getListaTecnicos().get(i).getEdad(),
+                    tecnicos.getListaTecnicos().get(i).getGenero()
+                };
+                model.addRow(newRow);
+            }
+
+            tablaModificarTecnico.setModel(model);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }//GEN-LAST:event_jButton10MouseClicked
+
+    private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
+        // TODO add your handling code here:
+        jd_modTecnico.setVisible(false);
+        this.setVisible(true);
+    }//GEN-LAST:event_jButton9MouseClicked
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        // TODO add your handling code here:
+        indTecSel = 0;
+        tecnicos.cargarArchivo();
+        tablaEliminarTecnico.setModel(new javax.swing.table.DefaultTableModel(
+                new Object[][]{},
+                new String[]{
+                    "Nombre", "Edad", "Genero"
+                }
+        ));
+        try {
+            tecnicos.cargarArchivo();
+
+            DefaultTableModel model = (DefaultTableModel) tablaEliminarTecnico.getModel();
+
+            for (int i = 0; i < tecnicos.getListaTecnicos().size(); i++) {
+                Object[] newRow = {
+                    tecnicos.getListaTecnicos().get(i).getNombre(),
+                    tecnicos.getListaTecnicos().get(i).getEdad(),
+                    tecnicos.getListaTecnicos().get(i).getGenero()
+                };
+                model.addRow(newRow);
+            }
+
+            tablaEliminarTecnico.setModel(model);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        jd_eliminarTecnico.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
+
+    private void jButton11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseClicked
+        // TODO add your handling code here:
+        jd_eliminarTecnico.setVisible(false);
+        this.setVisible(true);
+    }//GEN-LAST:event_jButton11MouseClicked
+
+    private void tablaEliminarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tablaEliminarTecnicoMouseClicked
+        // TODO add your handling code here:
+        try {
+            int sele = tablaEliminarTecnico.getSelectedRow();
+
+            for (int i = 0; i < tecnicos.getListaTecnicos().size(); i++) {
+                if (tecnicos.getListaTecnicos().get(i).getNombre().equalsIgnoreCase(tablaEliminarTecnico.getValueAt(sele, 0).toString())) {
+                    indTecSel = 0;
+                }
+            }
+
+            tecnicos.getListaTecnicos().remove(indTecSel);
+            tecnicos.escribirArchivo();
+
+            tablaEliminarTecnico.setModel(new javax.swing.table.DefaultTableModel(
+                    new Object[][]{},
+                    new String[]{
+                        "Nombre", "Edad", "Genero"
+                    }
+            ));
+            try {
+                tecnicos.cargarArchivo();
+
+                DefaultTableModel model = (DefaultTableModel) tablaEliminarTecnico.getModel();
+
+                for (int i = 0; i < tecnicos.getListaTecnicos().size(); i++) {
+                    Object[] newRow = {
+                        tecnicos.getListaTecnicos().get(i).getNombre(),
+                        tecnicos.getListaTecnicos().get(i).getEdad(),
+                        tecnicos.getListaTecnicos().get(i).getGenero()
+                    };
+                    model.addRow(newRow);
+                }
+
+                tablaEliminarTecnico.setModel(model);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            JOptionPane.showMessageDialog(jd_eliminarTecnico, "Eliminado exitosamente");
+        } catch (Exception e) {
+        }
+    }//GEN-LAST:event_tablaEliminarTecnicoMouseClicked
 
     /**
      * @param args the command line arguments
@@ -1188,11 +1726,17 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.ButtonGroup bg_generosTecnico;
     private javax.swing.ButtonGroup bg_tactilPantallaNuevaCompu;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1249,6 +1793,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -1258,22 +1805,37 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JDialog jd_crearComputadora;
     private javax.swing.JDialog jd_crearTecnicos;
+    private javax.swing.JDialog jd_eliminarComputadora;
+    private javax.swing.JDialog jd_eliminarTecnico;
+    private javax.swing.JDialog jd_modTecnico;
     private javax.swing.JDialog jd_modificarComputadoras;
     private javax.swing.JRadioButton rb_generoFTecnico;
+    private javax.swing.JRadioButton rb_generoFTecnicoMod;
     private javax.swing.JRadioButton rb_generoMTecnico;
+    private javax.swing.JRadioButton rb_generoMTecnicoMod;
     private javax.swing.JRadioButton rb_touchNoMod;
     private javax.swing.JRadioButton rb_touchNoNuevaCompu;
     private javax.swing.JRadioButton rb_touchSiMod;
     private javax.swing.JRadioButton rb_touchSiNuevaCompu;
+    private javax.swing.JTable tablaEliminar;
+    private javax.swing.JTable tablaEliminarTecnico;
     private javax.swing.JTable tablaModificar;
+    private javax.swing.JTable tablaModificarTecnico;
     private javax.swing.JTextField tf_colorMod;
     private javax.swing.JTextField tf_colorNuevaCompu;
     private javax.swing.JTextField tf_colorTecladoMod;
     private javax.swing.JTextField tf_colorTecladoNuevaCompu;
     private javax.swing.JSpinner tf_edadTecnico;
+    private javax.swing.JSpinner tf_edadTecnicoMod;
     private javax.swing.JSpinner tf_horasBateriasMod;
     private javax.swing.JSpinner tf_horasBateriasNuevaCompu;
     private javax.swing.JTextField tf_marcaDiscoDuroMod;
@@ -1289,6 +1851,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField tf_noSerieCompuMod;
     private javax.swing.JFormattedTextField tf_noSerieCompuNueva;
     private javax.swing.JTextField tf_nombreTecnico;
+    private javax.swing.JTextField tf_nombreTecnicoMod;
     private javax.swing.JTextField tf_tamañoDiscoDuroCompuMod;
     private javax.swing.JTextField tf_tamañoDiscoDuronuevaCompu;
     private javax.swing.JTextField tf_tamañoRAMMod;
