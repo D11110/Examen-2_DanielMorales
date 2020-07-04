@@ -6,6 +6,7 @@
 package examen.pkg2_danielmorales;
 
 import java.awt.Color;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JColorChooser;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -176,6 +177,16 @@ public class Main extends javax.swing.JFrame {
         tablaEliminarTecnico = new javax.swing.JTable();
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
+        jd_ensamblaje = new javax.swing.JDialog();
+        cb_compus = new javax.swing.JComboBox<>();
+        cb_tecnicos = new javax.swing.JComboBox<>();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jb_Ensamblar = new javax.swing.JButton();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        tablaEnsamblaje = new javax.swing.JTable();
+        instalacion = new javax.swing.JProgressBar();
+        jButton13 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -185,6 +196,8 @@ public class Main extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
+        jMenuItem7 = new javax.swing.JMenuItem();
 
         jd_crearComputadora.setMinimumSize(new java.awt.Dimension(541, 520));
         jd_crearComputadora.setPreferredSize(new java.awt.Dimension(541, 520));
@@ -474,7 +487,7 @@ public class Main extends javax.swing.JFrame {
                         .addComponent(tf_noNucleosProcesadorNuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel22)
                         .addComponent(tf_velocidadProcesadorNuevaCompu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
                 .addGroup(jd_crearComputadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2)
                     .addComponent(jButton1))
@@ -559,7 +572,6 @@ public class Main extends javax.swing.JFrame {
         );
 
         jd_modificarComputadoras.setMinimumSize(new java.awt.Dimension(520, 688));
-        jd_modificarComputadoras.setPreferredSize(new java.awt.Dimension(520, 688));
 
         jLabel32.setText("Color:");
 
@@ -865,7 +877,6 @@ public class Main extends javax.swing.JFrame {
         );
 
         jd_eliminarComputadora.setMinimumSize(new java.awt.Dimension(500, 320));
-        jd_eliminarComputadora.setPreferredSize(new java.awt.Dimension(500, 320));
 
         tablaEliminar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1043,6 +1054,11 @@ public class Main extends javax.swing.JFrame {
         });
 
         jButton12.setText("Eliminar");
+        jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton12MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jd_eliminarTecnicoLayout = new javax.swing.GroupLayout(jd_eliminarTecnico.getContentPane());
         jd_eliminarTecnico.getContentPane().setLayout(jd_eliminarTecnicoLayout);
@@ -1068,6 +1084,98 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jButton11)
                     .addComponent(jButton12))
                 .addContainerGap(43, Short.MAX_VALUE))
+        );
+
+        jd_ensamblaje.setMinimumSize(new java.awt.Dimension(554, 515));
+
+        jLabel63.setText("Computadora a ensamblar");
+
+        jLabel64.setText("Tecnico a cargo");
+
+        jb_Ensamblar.setText("Ensamblar");
+        jb_Ensamblar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jb_EnsamblarMouseClicked(evt);
+            }
+        });
+
+        tablaEnsamblaje.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Pieza", "Tiempo de ensamblaje"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Object.class, java.lang.Integer.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane5.setViewportView(tablaEnsamblaje);
+
+        jButton13.setText("Regresar");
+        jButton13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton13MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jd_ensamblajeLayout = new javax.swing.GroupLayout(jd_ensamblaje.getContentPane());
+        jd_ensamblaje.getContentPane().setLayout(jd_ensamblajeLayout);
+        jd_ensamblajeLayout.setHorizontalGroup(
+            jd_ensamblajeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_ensamblajeLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jd_ensamblajeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 489, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jd_ensamblajeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(jd_ensamblajeLayout.createSequentialGroup()
+                            .addComponent(jButton13)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jb_Ensamblar))
+                        .addGroup(jd_ensamblajeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(instalacion, javax.swing.GroupLayout.PREFERRED_SIZE, 489, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jd_ensamblajeLayout.createSequentialGroup()
+                                .addGroup(jd_ensamblajeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel64)
+                                    .addComponent(jLabel63))
+                                .addGap(18, 18, 18)
+                                .addGroup(jd_ensamblajeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(cb_compus, 0, 240, Short.MAX_VALUE)
+                                    .addComponent(cb_tecnicos, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
+                .addContainerGap(55, Short.MAX_VALUE))
+        );
+        jd_ensamblajeLayout.setVerticalGroup(
+            jd_ensamblajeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_ensamblajeLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(instalacion, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addGroup(jd_ensamblajeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cb_compus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel63))
+                .addGap(18, 18, 18)
+                .addGroup(jd_ensamblajeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel64)
+                    .addComponent(cb_tecnicos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_ensamblajeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jb_Ensamblar)
+                    .addComponent(jButton13))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -1127,6 +1235,18 @@ public class Main extends javax.swing.JFrame {
         jMenu2.add(jMenuItem6);
 
         jMenuBar1.add(jMenu2);
+
+        jMenu3.setText("Ensamblar");
+
+        jMenuItem7.setText("Iniciar ensamblaje");
+        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem7ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem7);
+
+        jMenuBar1.add(jMenu3);
 
         setJMenuBar(jMenuBar1);
 
@@ -1204,6 +1324,13 @@ public class Main extends javax.swing.JFrame {
             Procesador proce = new Procesador(numNucleosProcesador, velocidadProcesador, tiempoProcesador);
 
             Computadora compu = new Computadora(noSerie, año, colorCompu, materialCompu, r, hdd, bat, teclado, pant, proce);
+            compu.getPartes().add(r);
+            compu.getPartes().add(hdd);
+            compu.getPartes().add(bat);
+            compu.getPartes().add(teclado);
+            compu.getPartes().add(pant);
+            compu.getPartes().add(proce);
+
             computadoras.cargarArchivo();
             computadoras.getListaComputadoras().add(compu);
             computadoras.escribirArchivo();
@@ -1366,6 +1493,12 @@ public class Main extends javax.swing.JFrame {
             Procesador proce = new Procesador(numNucleosProcesador, velocidadProcesador, tiempoProcesador);
 
             Computadora compu = new Computadora(noSerie, año, colorCompu, materialCompu, r, hdd, bat, teclado, pant, proce);
+            compu.getPartes().add(r);
+            compu.getPartes().add(hdd);
+            compu.getPartes().add(bat);
+            compu.getPartes().add(teclado);
+            compu.getPartes().add(pant);
+            compu.getPartes().add(proce);
 
             computadoras.getListaComputadoras().add(compu);
             computadoras.escribirArchivo();
@@ -1647,6 +1780,7 @@ public class Main extends javax.swing.JFrame {
     private void tablaEliminarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tablaEliminarTecnicoMouseClicked
         // TODO add your handling code here:
         try {
+            tecnicos.cargarArchivo();
             int sele = tablaEliminarTecnico.getSelectedRow();
 
             for (int i = 0; i < tecnicos.getListaTecnicos().size(); i++) {
@@ -1655,6 +1789,94 @@ public class Main extends javax.swing.JFrame {
                 }
             }
 
+        } catch (Exception e) {
+        }
+    }//GEN-LAST:event_tablaEliminarTecnicoMouseClicked
+
+    private void jb_EnsamblarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jb_EnsamblarMouseClicked
+        try {
+            tecnicos.cargarArchivo();
+            computadoras.cargarArchivo();
+
+            Tecnico tecSele = (Tecnico) cb_tecnicos.getSelectedItem();
+            int indTec = 0;
+
+            for (int i = 0; i < tecnicos.getListaTecnicos().size(); i++) {
+                if (tecSele.getNombre().equalsIgnoreCase(tecnicos.getListaTecnicos().get(i).getNombre())) {
+                    indTec = i;
+                }
+            }
+
+            tecnicos.getListaTecnicos().get(indTec).setCantComputadoras(tecnicos.getListaTecnicos().get(indTec).getCantComputadoras() + 1);
+            tecnicos.escribirArchivo();
+
+            OrdenEnsamblaje orden = new OrdenEnsamblaje((Computadora) cb_compus.getSelectedItem(), (Tecnico) cb_tecnicos.getSelectedItem());
+            Ensamblaje ensam = new Ensamblaje(orden, tablaEnsamblaje, instalacion);
+            Thread hilooous = new Thread(ensam);
+            hilooous.start();
+        } catch (Exception e) {
+        }
+
+
+    }//GEN-LAST:event_jb_EnsamblarMouseClicked
+
+    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+        // TODO add your handling code here:
+        tablaEnsamblaje.setModel(new javax.swing.table.DefaultTableModel(
+                new Object[][]{},
+                new String[]{
+                    "Pieza", "Tiempo de ensamblaje"
+                }
+        ) {
+            Class[] types = new Class[]{
+                java.lang.Object.class, java.lang.Integer.class
+            };
+            boolean[] canEdit = new boolean[]{
+                false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types[columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit[columnIndex];
+            }
+        });
+
+        try {
+            tecnicos.cargarArchivo();
+            computadoras.cargarArchivo();
+
+            cb_compus.removeAllItems();
+            cb_tecnicos.removeAllItems();
+            DefaultComboBoxModel modelo = (DefaultComboBoxModel) cb_compus.getModel();
+            for (int i = 0; i < computadoras.getListaComputadoras().size(); i++) {
+                modelo.addElement(computadoras.getListaComputadoras().get(i));
+            }
+            cb_compus.setModel(modelo);
+
+            DefaultComboBoxModel modelo2 = (DefaultComboBoxModel) cb_tecnicos.getModel();
+            for (int i = 0; i < tecnicos.getListaTecnicos().size(); i++) {
+                modelo2.addElement(tecnicos.getListaTecnicos().get(i));
+            }
+            cb_tecnicos.setModel(modelo2);
+            jd_ensamblaje.setVisible(true);
+            this.setVisible(false);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_jMenuItem7ActionPerformed
+
+    private void jButton13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton13MouseClicked
+        // TODO add your handling code here:
+        jd_ensamblaje.setVisible(false);
+        this.setVisible(true);
+    }//GEN-LAST:event_jButton13MouseClicked
+
+    private void jButton12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseClicked
+        // TODO add your handling code here:
+        try {
             tecnicos.getListaTecnicos().remove(indTecSel);
             tecnicos.escribirArchivo();
 
@@ -1685,7 +1907,7 @@ public class Main extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(jd_eliminarTecnico, "Eliminado exitosamente");
         } catch (Exception e) {
         }
-    }//GEN-LAST:event_tablaEliminarTecnicoMouseClicked
+    }//GEN-LAST:event_jButton12MouseClicked
 
     /**
      * @param args the command line arguments
@@ -1725,10 +1947,14 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup bg_generosTecnico;
     private javax.swing.ButtonGroup bg_tactilPantallaNuevaCompu;
+    private javax.swing.JComboBox<String> cb_compus;
+    private javax.swing.JComboBox<String> cb_tecnicos;
+    private javax.swing.JProgressBar instalacion;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -1796,11 +2022,14 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
@@ -1808,14 +2037,18 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JButton jb_Ensamblar;
     private javax.swing.JDialog jd_crearComputadora;
     private javax.swing.JDialog jd_crearTecnicos;
     private javax.swing.JDialog jd_eliminarComputadora;
     private javax.swing.JDialog jd_eliminarTecnico;
+    private javax.swing.JDialog jd_ensamblaje;
     private javax.swing.JDialog jd_modTecnico;
     private javax.swing.JDialog jd_modificarComputadoras;
     private javax.swing.JRadioButton rb_generoFTecnico;
@@ -1828,6 +2061,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JRadioButton rb_touchSiNuevaCompu;
     private javax.swing.JTable tablaEliminar;
     private javax.swing.JTable tablaEliminarTecnico;
+    private javax.swing.JTable tablaEnsamblaje;
     private javax.swing.JTable tablaModificar;
     private javax.swing.JTable tablaModificarTecnico;
     private javax.swing.JTextField tf_colorMod;

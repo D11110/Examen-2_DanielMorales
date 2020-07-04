@@ -10,6 +10,7 @@ package examen.pkg2_danielmorales;
  * @author danie
  */
 public class Tecnico {
+
     private String nombre;
     private int edad;
     private String genero;
@@ -58,8 +59,7 @@ public class Tecnico {
 
     @Override
     public String toString() {
-        return "Tecnicos{" + "nombre=" + nombre + ", edad=" + edad + ", genero=" + genero + ", cantComputadoras=" + cantComputadoras + '}';
+        return "nombre = " + nombre + " " + " cantComputadoras =  " + cantComputadoras;
     }
-    
-    
+
 }
