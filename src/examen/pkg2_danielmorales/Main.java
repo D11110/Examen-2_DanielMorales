@@ -1326,11 +1326,11 @@ public class Main extends javax.swing.JFrame {
 
             Computadora compu = new Computadora(noSerie, año, colorCompu, materialCompu, r, hdd, bat, teclado, pant, proce);
             compu.getPartes().add(r);
+            compu.getPartes().add(pant);
+            compu.getPartes().add(proce);
             compu.getPartes().add(hdd);
             compu.getPartes().add(bat);
             compu.getPartes().add(teclado);
-            compu.getPartes().add(pant);
-            compu.getPartes().add(proce);
 
             computadoras.cargarArchivo();
             computadoras.getListaComputadoras().add(compu);
@@ -1495,11 +1495,11 @@ public class Main extends javax.swing.JFrame {
 
             Computadora compu = new Computadora(noSerie, año, colorCompu, materialCompu, r, hdd, bat, teclado, pant, proce);
             compu.getPartes().add(r);
+            compu.getPartes().add(pant);
+            compu.getPartes().add(proce);
             compu.getPartes().add(hdd);
             compu.getPartes().add(bat);
             compu.getPartes().add(teclado);
-            compu.getPartes().add(pant);
-            compu.getPartes().add(proce);
 
             computadoras.getListaComputadoras().add(compu);
             computadoras.escribirArchivo();
