@@ -1587,6 +1587,34 @@ public class Main extends javax.swing.JFrame {
         computadoras.escribirArchivo();
         
         JOptionPane.showMessageDialog(jd_eliminarComputadora, "Eliminado");
+        
+        tablaEliminar.setModel(new javax.swing.table.DefaultTableModel(
+                new Object[][]{},
+                new String[]{
+                    "No. de serie", "Año", "Material", "Ram", "Disco duro"
+                }
+        ));
+
+        try {
+            computadoras.cargarArchivo();
+
+            DefaultTableModel model = (DefaultTableModel) tablaEliminar.getModel();
+
+            for (int i = 0; i < computadoras.getListaComputadoras().size(); i++) {
+                Object[] newRow = {
+                    computadoras.getListaComputadoras().get(i).getNumSerie(),
+                    computadoras.getListaComputadoras().get(i).getAño(),
+                    computadoras.getListaComputadoras().get(i).getMaterial(),
+                    computadoras.getListaComputadoras().get(i).getRam(),
+                    computadoras.getListaComputadoras().get(i).getDiscoDuro()
+                };
+                model.addRow(newRow);
+            }
+
+            tablaEliminar.setModel(model);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }//GEN-LAST:event_jButton7MouseClicked
 
