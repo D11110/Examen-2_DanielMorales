@@ -41,7 +41,7 @@ public class RAM extends Parte {
 
     @Override
     public String toString() {
-        return "RAM{" + "tama\u00f1o=" + tamaño + ", marca=" + marca + '}';
+        return "RAM";
     }
    
    

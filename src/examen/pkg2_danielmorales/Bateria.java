@@ -42,7 +42,7 @@ public class Bateria extends Parte {
 
     @Override
     public String toString() {
-        return "Bateria{" + "capacidad=" + capacidad + ", material=" + material + '}';
+        return "Bateria";
     }
     
     

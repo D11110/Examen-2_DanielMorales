@@ -40,7 +40,7 @@ public class Pantalla extends Parte {
 
     @Override
     public String toString() {
-        return "Pantalla{" + "tactil=" + tactil + ", tipo=" + tipo + '}';
+        return "Pantalla";
     }
     
     
